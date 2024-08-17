@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BEEER ACADEMY</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu-style.css" type="text/css" />
+    <link rel="stylesheet" href="css/news-style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="particles-js"></div>
+    <section id="sidebar"></section>
+    <section id="news">
+      <div class="container">
+        <div class="contents_box">
+          <div>NEWS</div>
+          <p>必見！ビール界隈最新ニュース!!!</p>
+          <div class="news_box">
+            <div class="carousel">
+              <div class="contains">
+                <!-- スライド選択用 初期設定：1番目をchecked-->
+                <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+                <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+                <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+                <input class="slide_select" type="radio" id="SlideD" name="slide_check" />
+                <input class="slide_select" type="radio" id="SlideE" name="slide_check" />
+                <div class="slide">
+                  <!-- 左右スクロール用ボタン -->
+                  <div class="scroll_controler">
+                    <label class="scroll_button scroll_prev" for="SlideE"></label>
+                    <label class="scroll_button scroll_next" for="SlideB"></label>
+                  </div>
+                  <div class="news_box_inner_contents">
+                      <img src="img/news_0723.png" alt="">
+                      <p class="days">2024/07/23</p>
+                      <p>今年8月19日、福岡市西区姪浜にクラフトビール醸造所「Meinohama Brewery」開業！</p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="controler_scroll">
+                    <label class="scroll_button scroll_prev" for="SlideA"></label>
+                    <label class="scroll_button scroll_next" for="SlideC"></label>
+                  </div>
+                  <div class="news_box_inner_contents">
+                      <img src="img/news_0703.png" alt="">
+                      <p class="days">2024/07/03</p>
+                      <p>「3COINS　原宿本店」限定で、7月1日よりクラフトビールの販売をスタート！</p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="controler_scroll">
+                    <label class="scroll_button scroll_prev" for="SlideB"></label>
+                    <label class="scroll_button scroll_next" for="SlideD"></label>
+                  </div>
+                  <div class="news_box_inner_contents">
+                      <img src="img/news_0624.png" alt="">
+                      <p class="days">2024/06/24</p>
+                      <p>オリオンビールがフットウェアブランド「シャカ」と初のコラボレーション！</p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="controler_scroll">
+                    <label class="scroll_button scroll_prev" for="SlideC"></label>
+                    <label class="scroll_button scroll_next" for="SlideE"></label>
+                  </div>
+                  <div class="news_box_inner_contents">
+                      <img src="img/news_0530.png" alt="">
+                      <p class="days">2024/05/30</p>
+                      <p>BREWDOG × MAN WITH A MISSIONの期間限定ポップアップストアが6月1日より東京・下北沢にオープン！</p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="controler_scroll">
+                    <label class="scroll_button scroll_prev" for="SlideD"></label>
+                    <label class="scroll_button scroll_next" for="SlideA"></label>
+                  </div>
+                  <div class="news_box_inner_contents">
+                      <img src="img/news_0522.png" alt="">
+                      <p class="days">2024/05/22</p>
+                      <p>京都醸造 × DD4D BREWINGのコラボビール「かわるがわる」が登場！</p>
+                  </div>
+                </div>
+                <!-- 下のスライド選択用ボタン -->
+                <div class="move_controler">
+                  <label class="button_move" for="SlideA"></label>
+                  <label class="button_move" for="SlideB"></label>
+                  <label class="button_move" for="SlideC"></label>
+                  <label class="button_move" for="SlideD"></label>
+                  <label class="button_move" for="SlideE"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- jQuary公式CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共通化したファイルの読込 -->
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#sidebar").load("sidebar.html");
+      });
+    </script>
+    <!-- Tween:GSAPのモジュール -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- wavify:jQueryのプラグイン -->
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- JSファイルの読込 -->
+    <script src="js/menu.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>

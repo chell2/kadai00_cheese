@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BEEER ACADEMY</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu-style.css" type="text/css" />
+    <link rel="stylesheet" href="css/contact-style.css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="particles-js"></div>
+    <section id="sidebar"></section>
+    <section id="contact">
+      <div class="container">
+        <div class="contents_box">
+          <div>CONTACT</div>
+          <p>お問い合わせフォーム</p>
+          <div class="contents">
+            <div class="contact_box">
+              <form action="" method="post" class="contact_box_form">
+                <p>
+                  <label class="ef">
+                    <span>名前</span>
+                    <input type="text" name="name" id="name" placeholder="麦酒 飲世" required class="textarea1">
+                  </label>
+                </p>
+                <p>
+                  <label class="ef">
+                    <span>カナ</span>
+                    <input type="text" name="kana" id="kana" placeholder="ビイル ノムヨ" required class="textarea1">
+                  </label>
+                </p>
+                <p>
+                  <label class="ef">
+                    <span>Eメール</span>
+                    <input type="email" name="email" id="email"  placeholder="mail@nezu-mi.com" required class="emailarea">
+                  </label>
+                </p>
+                <table>
+                  <tr>
+                    <td><span>お問合せ内容</span></td>
+                    <td class=contact_box_form_checkarea>
+                      <ul>
+                          <li>
+                            <input type="checkbox" name="reason" id="start">
+                            <label for="start">醸造に興味がある</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="reason" id="change">
+                            <label for="change">ビール系企業に就職・転職したい</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="reason" id="use">
+                            <label for="use">ビールと関わる仕事をしており，仕事に生かしたい</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="reason" id="culture">
+                            <label for="culture">ビールの教養を身につけたい</label>
+                          </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                <div class="contact_box_form_memo">
+                  <p>
+                    <span>詳細</span>
+                  </p>
+                  <p>
+                    <label class="ef">
+                      <textarea name="detail" id="detail" placeholder="ご質問等がございましたらご入力ください。"  class="textarea2"></textarea>
+                    </label>
+                  </p>
+                </div>
+                <div class="contact_box_form_send">
+                  <input type="submit" value="送信"  class="contact_box_form_send-button">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- jQuary公式CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共通化したファイルの読込 -->
+    <script>
+      $(function() {
+        $("#header").load("header.html");
+        $("#sidebar").load("sidebar.html");
+      });
+    </script>
+    <!-- Tween:GSAPのモジュール -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- wavify:jQueryのプラグイン -->
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- JSファイルの読込 -->
+    <script src="js/menu.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>

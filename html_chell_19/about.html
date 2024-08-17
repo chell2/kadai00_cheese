@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BEEER ACADEMY</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu_style.css" type="text/css" />
+    <link rel="stylesheet" href="css/about_style.css" type="text/css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="particles-js"></div>
+    <section id="sidebar"></section>
+    <section id="about">
+      <div class="container">
+        <div class="contents_box">
+          <div>ABOUT</div>
+          <p>BEEEER ACADEMYについて</p>
+          <div class="about_box">
+            <img id="logo" src="img/ba_logo.png" alt="" />
+            <p>
+              <span>BEEEER ACADEMY</span>は、<br>
+              ビール好きによるビール好きのためのビール学習サイトです
+            </p>
+            <p>------</p>
+            <div id="about-4e">
+              <span>B</span>eer is an <br>
+              <span>E</span>scape from dull routine, and <br>
+              <span>E</span>nergy boost for tomorrow! Beer can even power the <br>
+              <span>E</span>conomy! Well, well, well... Whatever you do, <br>
+              <span>E</span>njoy a great pint! Now, are you <br>
+              <span>R</span>eady???<br><br>
+            </div>
+            <div id="about-4e">
+              ビールは退屈な日常からの脱出, そして明日への活力！<br>
+              ビールで経済だってまわせるんだから！<br>
+              まぁまぁ何はともあれ最高の一杯を楽しもうよ！<br>
+              さぁ、準備はOK？？？
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuary公式CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共通化したファイルの読込 -->
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#sidebar').load('sidebar.html');
+      });
+    </script>
+    <!-- Tween:GSAPのモジュール -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- wavify:jQueryのプラグイン -->
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- JSファイルの読込 -->
+    <script src="js/menu.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>

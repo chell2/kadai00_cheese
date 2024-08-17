@@ -1,0 +1,165 @@
+/* ---- ニュース ---- */
+.news_box {
+  width: 470px;
+  margin: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.news_box_innerwrap {
+  margin-top: 0px;
+}
+
+.news_box_inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.news_box_inner_contents {
+  font-size: 16px;
+}
+
+.news_box_inner_contents img {
+  width: 420px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.news_box_inner_contents p {
+  width: 420px;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: left;
+}
+
+.days {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+}
+/* カルーセル内容 */
+.contains {
+  width: 500px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+/* ラジオボタン非表示 */
+.slide_select {
+  display: none;
+}
+/* 各スライド */
+.slide {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+}
+/* 前へ次へボタン */
+.scroll_button {
+  z-index: 3;
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  top: 45%;
+  margin-top: -20px;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #ac7101;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.scroll_button:hover {
+  opacity: 1;
+}
+/* 前へ ＜ */
+.scroll_prev {
+  left: 10px;
+  transform: rotate(-135deg);
+}
+/* 次へ ＞ */
+.scroll_next {
+  right: 10px;
+  transform: rotate(45deg);
+}
+/* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+/* スライド移動の各ボタン */
+.button_move {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: 0.5;
+  /* スライドより前面に */
+  z-index: 2;
+}
+.button_move:hover {
+  opacity: 0.75;
+}
+/* スライド移動ボタンの色 */
+.button_move {
+  background-color: #fdfdfd;
+}
+/* 1番目のスライド選択時 */
+/* 1番目のスライドの透明度を0に */
+.slide_select:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
+  opacity: 1;
+}
+/* スライド移動ボタン選択時 */
+.slide_select:nth-of-type(1):checked
+  ~ .move_controler
+  .button_move:nth-of-type(1) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(2):checked
+  ~ .move_controler
+  .button_move:nth-of-type(2) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(3):checked
+  ~ .move_controler
+  .button_move:nth-of-type(3) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(4):checked
+  ~ .move_controler
+  .button_move:nth-of-type(4) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(5):checked ~ .slide:nth-of-type(5) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(5):checked
+  ~ .move_controler
+  .button_move:nth-of-type(5) {
+  opacity: 1;
+}

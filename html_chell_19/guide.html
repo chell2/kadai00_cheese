@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BEEER ACADEMY</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu-style.css" type="text/css" />
+    <link rel="stylesheet" href="css/guide-style.css" type="text/css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="particles-js"></div>
+    <section id="sidebar"></section>
+    <section id="column">
+      <div class="container">
+        <div class="contents_box">
+          <div>STYLE GUIDE</div>
+          <p>いろんなビアスタイルの魅力を知ろう</p>
+          <div class="contents">
+            <p>
+              クラフトビールのビアスタイルは、なんと110種類以上！<br />
+              大きくは、下面発酵でつくられる「LAGER/ラガー」と上面発酵でつくられる「ALE/エール」に分かれます。
+            </p>
+            <!-- beerListは modal.jsで生成 -->
+            <ul class="image-grid" id="beerList"></ul>
+          </div>
+          <!-- modal start -->
+          <div class="modal">
+            <div class="modal__bg" data-modal="bg"></div>
+            <div class="modal__inner" data-modal="inner">
+              <div class="modal-card" data-modal="box-modal001">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ピルスナー</p>
+                <img
+                  src="img/pilsnerurquell.jpg"
+                  alt="ピルスナー"
+                  style="width: 300px"
+                />
+                <p class="modal-card__text">
+                  チェコで生まれた世界初のゴールド色のビール。<br />
+                  アルコール度数は低め、キレのある爽やかなのどごしとホップの苦味が特徴。<br />
+                  日本で一番親しまれている。一番搾りやハートランドもピルスナー。<br />
+                  アルコール度数は4.1〜5.1%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal002">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ドルトムンダー</p>
+                <img
+                  src="img/dortmunder.jpg"
+                  alt="ドルトムンダー"
+                  style="width: 180px"
+                />
+                <p class="modal-card__text">
+                  ドイツ最大のビール生産都市ドルトムントで、ピルスナーを参考に造られたゴールド色のビール。<br />
+                  ピルスナーと比べホップの香りは弱め、マイルドな味わいで口当たりが軽いのが特徴。<br />
+                  日本ではサッポロエビスビールがこれ。アルコール度数は5.1〜6.1%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal003">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ヘレス</p>
+                <img src="img/helles.jpg" alt="ヘレス" style="width: 300px" />
+                <p class="modal-card__text">
+                  ミュンヘンで、ピルスナーに対抗して造られた。<br />
+                  南ドイツの水質によりホップを効かすことができないため、麦芽のうまみが濃く、甘味もあり、ホップの苦味が弱いのが特徴。<br />
+                  アルコール度数は4.5%〜5.5%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal004">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ボック</p>
+                <img src="img/bock.jpg" alt="ボック" style="width: 200px" />
+                <p class="modal-card__text">
+                  ドイツ発祥の伝統的な高アルコールのダークビール。重厚な麦芽の風味とコクのある口あたりが特徴。<br />
+                  名前の由来は、発祥の地であるアインベックから採られたという説と、飲んだ人が「若い雄ヤギのように元気になる」ことから採られたという説あり。<br />
+                  アルコール度数は6.3%〜14.3%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal005">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ペールエール</p>
+                <img
+                  src="img/paleale.jpg"
+                  alt="ペールエール"
+                  style="width: 300px"
+                />
+                <p class="modal-card__text">
+                  イギリス生まれのダークゴールド〜銅色のビール。<br />
+                  原料に使われた酵母由来のフルーティーな香りとホップ由来の豊かな苦味、すっきりとドライな味わいが特徴。<br />
+                  また、アメリカンスタイルは、フルーティーかつフローラルな柑橘系の香りをもつアメリカ産ホップを使用。<br />
+                  アルコール度数は4.4〜5.3%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal006">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">IPA</p>
+                <img src="img/ipa.jpg" alt="IPA" style="width: 180px" />
+                <p class="modal-card__text">
+                  イギリス生まれのインディア・ペールエールは、大量のホップがもたらす鮮烈な香りと苦味、やや高めのアルコール度数が特徴。<br />
+                  大航海時代、当時イギリスの植民地だったインドにおいしいビールを届けるために開発された製法で、防腐作用があるといわれるホップを大量に使ったのが始まり。<br />
+                  アルコール度数は5.1〜7.1%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal007">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ホワイトビール</p>
+                <img
+                  src="img/belgianwhite.jpg"
+                  alt="ホワイトビール"
+                  style="width: 270px"
+                />
+                <p class="modal-card__text">
+                  ベルギー生まれの白ビール。<br />発芽していない小麦を使用。また、オレンジピールやコリアンダーシードを副原料として用いている。豊かな泡立ちと、副原料による柑橘系やスパイスの香りがあり、柔らかな酸味が特徴。<br />
+                  ヒューガルデン・ホワイトや水曜日のネコなど。アルコール度数4.8%〜5.2%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal008">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">セゾン</p>
+                <img src="img/saison.jpg" alt="セゾン" style="width: 300px" />
+                <p class="modal-card__text">
+                  もとはベルギーで造られる瓶内二次発酵タイプの自家用ビール。<br />
+                  農家が冬の間に仕込み、夏の農作業の合間に喉を潤すため貯蔵していた。<br />
+                  ピーチ・グレープフルーツ・ライム・ホワイトペッパーを思わせる、フルーティとスパイシーが一体となったセゾン特有の香りや飲み口の軽さが特徴。<br />
+                  アルコール度数は5.0%~9.5%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal009">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ランビック</p>
+                <img
+                  src="img/lambic.jpg"
+                  alt="ランビック"
+                  style="width: 180px"
+                />
+                <p class="modal-card__text">
+                  野生酵母を使い自然発酵させて造るビール。3年以上経った古いホップを用い、発酵と熟成に2年半〜3年かける。強い酸味と独特の香りが特徴。<br />フランボワーズやカシスなどのフルーツを加えて造るものも。<br />アルコール度数6.3〜8.9%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal010">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ケルシュ</p>
+                <img src="img/kolsch.jpg" alt="ケルシュ" style="width: 300px" />
+                <p class="modal-card__text">
+                  ドイツ・ケルンで生まれた明るいゴールド色のビール。<br />
+                  エールの酵母を使って上面発酵し、ラガーのような低温・長時間の熟成で仕上げることで、フルーティーさとキレのある味わいを合わせ持っているのが特徴。<br />
+                  ライトボディだが甘味と苦味のバランスが魅力。アルコール度数は5%前後
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal011">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">ヴァイツェン</p>
+                <img
+                  src="img/weizen.jpg"
+                  alt="ヴァイツェン"
+                  style="width: 230px"
+                />
+                <p class="modal-card__text">
+                  南ドイツの伝統的な小麦ビール。<br />
+                  小麦麦芽を50〜70%混ぜ、特殊酵母で発酵させる。クローヴやバナナに似た香りで、ほのかな酸味を伴う。ホップの苦みと香りはほぼ感じない。<br />
+                  ゴールド〜琥珀色で、泡立ち豊か。<br />アルコール度数4.9〜5.6%
+                </p>
+              </div>
+
+              <div class="modal-card" data-modal="box-modal012">
+                <div class="modal-card__close" data-modal="close">
+                  <div class="modal-card__closeBtn"></div>
+                </div>
+                <p class="modal-card__heading">スタウト</p>
+                <img src="img/stout.jpg" alt="スタウト" style="width: 300px" />
+                <p class="modal-card__text">
+                  アイルランドの醸造家ギネスが考案。焙煎したローストバーレイを使用。<br />
+                  焦がし麦のすっきりした苦味と麦芽のカラメルフレーバーが強く、泡立ちが豊かで泡持ちもよい。アルコール度数4.1〜5.3%<br />
+                  ドライスタウトが主流だが、アルコール度数7~12%のインペリアルスタウトや、乳糖を加えたミルクスタウトなどのバリエーションあり。
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+        </div>
+      </div>
+    </section>
+    <!-- jQuary公式CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共通化したファイルの読込 -->
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#sidebar').load('sidebar.html');
+      });
+    </script>
+    <!-- Tween:GSAPのモジュール -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- wavify:jQueryのプラグイン -->
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- JSファイルの読込 -->
+    <script src="js/menu.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>

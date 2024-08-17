@@ -1,0 +1,179 @@
+/* ---- お問合せ ---- */
+.contact_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact_box_form {
+  margin: 0px auto 0;
+}
+
+.contact_box_form p {
+  margin-bottom: 14px;
+}
+
+.contact_box_form span {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+  padding: auto 0;
+}
+
+.textarea1 {
+  width: 328px;
+  height: 20px;
+  margin-left: 120px;
+  padding: 5px 8px;
+  font-size: 14px;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+  background-image: none;
+}
+
+.emailarea {
+  width: 328px;
+  height: 20px;
+  margin-left: 120px;
+  padding: 5px 8px;
+  font-size: 14px;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+  background-image: none;
+}
+
+.contact_box_form_checkarea {
+  padding-left: 128px;
+}
+
+.contact_box_form_checkarea li {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+input[type='checkbox'] {
+  display: none;
+  /*デフォルトのチェックボックスを非表示にする*/
+}
+
+input[type='checkbox'] + label {
+  position: relative;
+  padding-left: 40px;
+  /*チェックボックス分の隙間を作る*/
+}
+
+input[type='checkbox'] + label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: none;
+  background-color: #f0ebe5;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #1b2538;
+}
+
+input[type='checkbox']:checked + label::before {
+  background: #f5bc7c;
+}
+
+input[type='checkbox']:checked + label::after {
+  /* ✓をつくる */
+  content: '';
+  display: block;
+  width: 16px;
+  height: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  position: absolute;
+  top: 20%;
+  left: 7px;
+  /* 箱を斜めに傾けてチェック表示にする */
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+.contact_box_form_memo {
+  display: flex;
+  align-content: center;
+  margin-top: 2px;
+}
+
+.textarea2 {
+  width: 328px;
+  height: 80px;
+  margin-left: 126px;
+  padding: 5px 8px;
+  background-image: none;
+  font-size: 14px;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+
+/* フォーカスでふわっと影が出る */
+.textarea1 input[type='text'] {
+  box-sizing: border-box;
+  transition: 0.3s;
+  color: #bfbfbf;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+.emailarea input[type='email'] {
+  box-sizing: border-box;
+  transition: 0.3s;
+  color: #bfbfbf;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+.textarea2 input[type='text'] {
+  box-sizing: border-box;
+  transition: 0.3s;
+  color: #bfbfbf;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+.ef input[type='text']:focus {
+  border: 1px solid #6d6d6d;
+  outline: none;
+  box-shadow: 0 0 5px 1px peru;
+}
+.ef input[type='email']:focus {
+  border: 1px solid #6d6d6d;
+  outline: none;
+  box-shadow: 0 0 5px 1px peru;
+}
+.ef textarea:focus {
+  border: 1px solid #6d6d6d;
+  outline: none;
+  box-shadow: 0 0 5px 1px peru;
+}
+/*----------------------*/
+
+.contact_box_form_send {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.contact_box_form_send-button {
+  color: #fff;
+  background-color: peru;
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid peru;
+}
+
+.contact_box_form_send-button:hover {
+  background-color: #fff;
+  border-color: peru;
+  color: peru;
+}

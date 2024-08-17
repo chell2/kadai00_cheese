@@ -1,0 +1,31 @@
+/* ---- ABOUT ---- */
+.about_box {
+  width: 520px;
+  margin: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#logo {
+  border-radius: 50%;
+  width: 160px;
+}
+
+.about_box p {
+  font-family: sans-serif;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+#about-4e {
+  width: 464px;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.2;
+  margin: 10px auto;
+}
+
+span {
+  color: #ac7101;
+}

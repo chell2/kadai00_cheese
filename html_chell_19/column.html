@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BEEER ACADEMY</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu-style.css" type="text/css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="particles-js"></div>
+    <section id="sidebar"></section>
+    <section id="column">
+      <div class="container">
+        <div class="contents_box">
+          <div>COLUMN</div>
+          <p>ビールにまつわる小噺</p>
+          <div class="contents">COMING SOON🍺</div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuary公式CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共通化したファイルの読込 -->
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#sidebar').load('sidebar.html');
+      });
+    </script>
+    <!-- Tween:GSAPのモジュール -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- wavify:jQueryのプラグイン -->
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- JSファイルの読込 -->
+    <script src="js/menu.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>

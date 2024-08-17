@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BEEER ACADEMY</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu-style.css" type="text/css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <!----------------------------------------------------
+  ----  🍻 WE LOVE BEER 🍻  ---------------------
+  ----                                  -------------------------
+           ∩＿＿＿＿∩                            -------------
+          /  ^^^^^^^ ヽ                            -----------
+        /^^●^^^● ^^ |      プハーッ!       ---------
+        |^//( _●_ )//^ミ                         ----------
+      彡､,, , ,|  U  | ､,_ /＿＿                   -----------
+    ／＿＿＿ ヽ ノ    （_,_  __,） o             ----------
+  (＿＿＿＿u）         ||'ﾟ｡: : o:|| ヽ             ----------
+        | ^^^^^^^    ||:｡::  ｡ ;⊂Ξ              ----------
+        | ^^^^^^^    ||:.:＿＿.||                -----------
+  --                                               ------------------
+  -------                                   ----------------------
+  ---------------   NO BEER NO LIFE  🍺 💜  -------
+  ------------------------------------------------------>
+  <body>
+    <div id="header"></div>
+    <section id="liquid surface">
+      <svg version="1.1" id="wavify-js" xmlns="http://www.w3.org/2000/svg">
+        <path id="wave" d="" />
+      </svg>
+    </section>
+    <div id="particles-js"></div>
+    <section id="sidebar"></section>
+    <section id="title">
+      <div class="container">
+        <div class="box">
+          <div>BEEER ACADEMY</div>
+          <p>ー セカイを変えるビールをさがそう ー</p>
+        </div>
+      </div>
+    </section>
+    <!-- jQuary公式CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- 共通化したファイルの読込 -->
+    <script>
+      $(function () {
+        $('#header').load('header.html');
+        $('#sidebar').load('sidebar.html');
+      });
+    </script>
+    <!-- Tween:GSAPのモジュール -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <!-- wavify:jQueryのプラグイン -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- JSファイルの読込 -->
+    <script src="js/menu.js"></script>
+    <script src="js/wavify.js"></script>
+    <script src="js/jquery.wavify.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>
