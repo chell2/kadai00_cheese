@@ -32,7 +32,7 @@
 - jQueryやGSAPのアニメーションを使ってみたくて、WavifyやParticlesなどを試しました。
 - 逆に、スライダーやモーダルウィンドウなどはライブラリやプラグインを使わない挑戦をし、実装することができました。
 - まったく無駄ですが、indexファイルにアスキーアートを入れました。
-
+- 今回HTMLファイルを複数に分ける形をとったため、ファイル間の共通部分についてはjQueryで共通化を図りました。
 
 ### 6.難しかった点・次回トライしたいこと(又は機能)
 
@@ -46,14 +46,17 @@
 - UI・UXに関する学習方法など
 
 ### 8.フリー項目（感想、シェアしたいこと等なんでも）
-- Wavify🌊
+- Wavify🌊<br>
   https://github.com/peacepostman/wavify
 
-- Particles🫧
+- Particles🫧<br>
   https://vincentgarreau.com/particles.js/
   
-- ハンバーガーメニュー🍔
+- ハンバーガーメニュー🍔<br>
   https://photopizza.design/hamburger_menu_technique/
   
-- Webデザインの参考になりそうなサイトを見つけた！
+- Webデザインの参考になりそうなサイトを見つけた！<br>
   https://sankoudesign.com/category/element-move/
+  
+- HTMLの共通化について
+  https://wand.witchserver.jp/archives/46
